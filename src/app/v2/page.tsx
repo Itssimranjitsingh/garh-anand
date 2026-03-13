@@ -1,4 +1,5 @@
 "use client";
+// Garh Anand v2 — premium spiritual heritage homepage
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
