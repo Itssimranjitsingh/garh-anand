@@ -270,7 +270,6 @@ export default function GarhAnandPage() {
           background-image: url('/assets/hero01.jpeg');
           background-size: cover;
           background-position: center;
-          background-attachment: fixed;
         }
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: rgba(0,0,0,0.05); border-radius: 10px; }
