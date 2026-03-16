@@ -373,10 +373,16 @@ export default function GarhAnandPage() {
                 {/* ── Hero ── */}
                 <section className="hero-bg relative min-h-[85vh] flex items-center justify-center">
                     <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#3E2723]/70 to-[#3E2723]/90 backdrop-blur-[2px]" />
-                    <div className="container mx-auto px-6 text-center relative z-10 pt-24 pb-12">
-                        <span className="inline-block py-1.5 px-5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-amber-50 mb-6 text-xs font-bold tracking-[0.2em] uppercase shadow-lg">
-                            <b>ਸਤਿਗੁਰਪ੍ਰਸਾਦਿ</b>
-                        </span>
+                    <div className="container mx-auto px-6 text-center relative z-10 pt-24 pb-12 flex flex-col items-center">
+                        <div className="flex justify-center items-center mb-6">
+                            <Image
+                                src="/assets/satgur_prasad_white.png"
+                                alt="ਸਤਿਗੁਰਪ੍ਰਸਾਦਿ"
+                                width={260}
+                                height={80}
+                                className="h-40 w-auto object-contain"
+                            />
+                        </div>
                         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8 text-white drop-shadow-lg">
                             Connecting Our Roots,
                             <br />
@@ -408,120 +414,6 @@ export default function GarhAnandPage() {
                                     <path d="m12 5 7 7-7 7" />
                                 </svg>
                             </a>
-                        </div>
-                    </div>
-                </section>
-
-                {/* ── Wisdom ── */}
-                <section id="wisdom" className="py-20 md:py-24 relative overflow-hidden">
-                    <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#B45309]/10 rounded-full blur-3xl -z-10" />
-                    <div className="container mx-auto px-6">
-                        <div className="max-w-4xl mx-auto text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E2723] mb-4 tracking-tight">
-                                Wisdom from the Panth
-                            </h2>
-                            <div className="w-20 h-1.5 bg-[#B45309] mx-auto mb-6 rounded-full" />
-                            <p className="text-base text-[#3E2723]/70 font-medium">
-                                Inspiration drawn from the jewels of the Panth who dedicated their
-                                lives to the preservation of Gurmat and Gurbani.
-                            </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                            {/* Card 1 */}
-                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
-                                <div className="w-full h-80 relative">
-                                    <Image
-                                        src="https://www.sikhtranslations.com/content/images/2023/04/gurbachan-singh-bhindranwale-2.jpg"
-                                        alt="Sant Gyani Gurbachan Singh Ji Bhindrawale"
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                </div>
-                                <div className="p-6 flex flex-col justify-center flex-grow">
-                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
-                                        Sant Gyani Gurbachan Singh Ji
-                                    </h3>
-                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
-                                        Khalsa Bhindranwale
-                                    </p>
-                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
-                                        "ਜਿਹੜੇ ਲੋਕ ਕਹਿੰਦੇ ਆ ਜੀ ਕਿ ਸਾਨੂੰ.....ਗੁਰਮੁਖੀ ਪੜਨੀ ਨਾ ਪਵੇ ਤੇ
-                                        ਆਪੋ ਹੀ ਪੜ ਲਈਏ ਤੇ ਪਦ ਛੇਦ ਹੀ ਚਾਹੀਦੀਆਂ ਨੇ ਬੀੜਾਂ ਉਹ ਏਸ ਗੱਲ ਨੂੰ
-                                        ਨਈ ਸਮਝਦੇ..."
-                                    </p>
-                                    <button
-                                        onClick={() => setOpenWisdomModal("1")}
-                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
-                                    >
-                                        See More
-                                    </button>
-                                </div>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
-                                <div className="w-full h-80 relative">
-                                    <Image
-                                        src="/assets/Sant_Giani_Kartar_Singh_Ji_Khalsa_Bhindranwale.jpg"
-                                        alt="Sant Gyani Kartar Singh Ji Bhindrawale"
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                </div>
-                                <div className="p-6 flex flex-col justify-center flex-grow">
-                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
-                                        Sant Gyani Kartar Singh Ji
-                                    </h3>
-                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
-                                        Khalsa Bhindranwale
-                                    </p>
-                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
-                                        "ਸੰਤ ਗਿਆਨੀ ਕਰਤਾਰ ਸਿੰਘ ਜੀ ਭਿੰਡਰਾਂਵਾਲਿਆਂ ਦੇ ਪਦਛੇਦ ਦੇ ਵਿਰੋਧ
-                                        ਵਿੱਚ ਕਥਾ ਦੀ ਰਿਕਾਰਡਿੰਗ ਚੋ ਮਿਲੇ ਬਚਨਃ- ਏਸ ਵਾਸਤੇ ਪਦ ਛੇਦ ਕਰਨਾ ਏਹ
-                                        ਅਤਿਅੰਤਿ ਮਨ੍ਹਾ ਹੈ..."
-                                    </p>
-                                    <button
-                                        onClick={() => setOpenWisdomModal("2")}
-                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
-                                    >
-                                        See More
-                                    </button>
-                                </div>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
-                                <div className="w-full h-80 relative">
-                                    <Image
-                                        src="https://live.staticflickr.com/65535/50221817848_ed394301d8_z.jpg"
-                                        alt="Bhai Sahib Bhai Randheer Singh Ji"
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                </div>
-                                <div className="p-6 flex flex-col justify-center flex-grow">
-                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
-                                        Bhai Sahib Bhai Randheer Singh Ji
-                                    </h3>
-                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
-                                        Akhand Kirtani Jatha
-                                    </p>
-                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
-                                        ਪੰਥ ਦੀ ਸੋਨ ਚਿੜੀ ਭਾਈ ਸਾਹਿਬ ਰਣਧੀਰ ਸਿੰਘ ਜੀ ਨੇ ਆਪਣੀ ਰਚਨਾ "ਜੋਤਿ
-                                        ਵਿਗਾਸ" &apos;ਚ ਕਵਿਤਾਵਾਂ ਵੀ ਅੰਕਿਤ ਕੀਤੀਆ ਹਨ...
-                                    </p>
-                                    <button
-                                        onClick={() => setOpenWisdomModal("3")}
-                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
-                                    >
-                                        See More
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -735,6 +627,120 @@ export default function GarhAnandPage() {
                                     </div>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ── Wisdom ── */}
+                <section id="wisdom" className="py-20 md:py-24 relative overflow-hidden">
+                    <div className="absolute top-1/2 left-0 w-96 h-96 bg-[#B45309]/10 rounded-full blur-3xl -z-10" />
+                    <div className="container mx-auto px-6">
+                        <div className="max-w-4xl mx-auto text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3E2723] mb-4 tracking-tight">
+                                Wisdom from the Panth
+                            </h2>
+                            <div className="w-20 h-1.5 bg-[#B45309] mx-auto mb-6 rounded-full" />
+                            <p className="text-base text-[#3E2723]/70 font-medium">
+                                Inspiration drawn from the jewels of the Panth who dedicated their
+                                lives to the preservation of Gurmat and Gurbani.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                            {/* Card 1 */}
+                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
+                                <div className="w-full h-80 relative">
+                                    <Image
+                                        src="https://www.sikhtranslations.com/content/images/2023/04/gurbachan-singh-bhindranwale-2.jpg"
+                                        alt="Sant Gyani Gurbachan Singh Ji Bhindrawale"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col justify-center flex-grow">
+                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
+                                        Sant Gyani Gurbachan Singh Ji
+                                    </h3>
+                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
+                                        Khalsa Bhindranwale
+                                    </p>
+                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
+                                        "ਜਿਹੜੇ ਲੋਕ ਕਹਿੰਦੇ ਆ ਜੀ ਕਿ ਸਾਨੂੰ.....ਗੁਰਮੁਖੀ ਪੜਨੀ ਨਾ ਪਵੇ ਤੇ
+                                        ਆਪੋ ਹੀ ਪੜ ਲਈਏ ਤੇ ਪਦ ਛੇਦ ਹੀ ਚਾਹੀਦੀਆਂ ਨੇ ਬੀੜਾਂ ਉਹ ਏਸ ਗੱਲ ਨੂੰ
+                                        ਨਈ ਸਮਝਦੇ..."
+                                    </p>
+                                    <button
+                                        onClick={() => setOpenWisdomModal("1")}
+                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
+                                    >
+                                        See More
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Card 2 */}
+                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
+                                <div className="w-full h-80 relative">
+                                    <Image
+                                        src="/assets/Sant_Giani_Kartar_Singh_Ji_Khalsa_Bhindranwale.jpg"
+                                        alt="Sant Gyani Kartar Singh Ji Bhindrawale"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col justify-center flex-grow">
+                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
+                                        Sant Gyani Kartar Singh Ji
+                                    </h3>
+                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
+                                        Khalsa Bhindranwale
+                                    </p>
+                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
+                                        "ਸੰਤ ਗਿਆਨੀ ਕਰਤਾਰ ਸਿੰਘ ਜੀ ਭਿੰਡਰਾਂਵਾਲਿਆਂ ਦੇ ਪਦਛੇਦ ਦੇ ਵਿਰੋਧ
+                                        ਵਿੱਚ ਕਥਾ ਦੀ ਰਿਕਾਰਡਿੰਗ ਚੋ ਮਿਲੇ ਬਚਨਃ- ਏਸ ਵਾਸਤੇ ਪਦ ਛੇਦ ਕਰਨਾ ਏਹ
+                                        ਅਤਿਅੰਤਿ ਮਨ੍ਹਾ ਹੈ..."
+                                    </p>
+                                    <button
+                                        onClick={() => setOpenWisdomModal("2")}
+                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
+                                    >
+                                        See More
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Card 3 */}
+                            <div className="glass-panel rounded-[2rem] overflow-hidden flex flex-col h-full transition-all duration-500 hover:-translate-y-2 group">
+                                <div className="w-full h-80 relative">
+                                    <Image
+                                        src="https://live.staticflickr.com/65535/50221817848_ed394301d8_z.jpg"
+                                        alt="Bhai Sahib Bhai Randheer Singh Ji"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col justify-center flex-grow">
+                                    <h3 className="text-lg font-bold text-[#3E2723] mb-1">
+                                        Bhai Sahib Bhai Randheer Singh Ji
+                                    </h3>
+                                    <p className="text-[10px] text-[#B45309] font-extrabold uppercase tracking-[0.15em] mb-4">
+                                        Akhand Kirtani Jatha
+                                    </p>
+                                    <p className="text-[#3E2723]/80 text-sm leading-relaxed font-medium mb-4 line-clamp-3">
+                                        ਪੰਥ ਦੀ ਸੋਨ ਚਿੜੀ ਭਾਈ ਸਾਹਿਬ ਰਣਧੀਰ ਸਿੰਘ ਜੀ ਨੇ ਆਪਣੀ ਰਚਨਾ "ਜੋਤਿ
+                                        ਵਿਗਾਸ" &apos;ਚ ਕਵਿਤਾਵਾਂ ਵੀ ਅੰਕਿਤ ਕੀਤੀਆ ਹਨ...
+                                    </p>
+                                    <button
+                                        onClick={() => setOpenWisdomModal("3")}
+                                        className="self-start text-sm font-bold text-[#B45309] border-b-2 border-[#B45309]/30 pb-1 hover:border-[#B45309] hover:text-[#3E2723] transition-all"
+                                    >
+                                        See More
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
